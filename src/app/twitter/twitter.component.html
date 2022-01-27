@@ -1,0 +1,22 @@
+<p>Twitter works!</p>
+<h4>Read Angular JSON using Http GET</h4>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Text</th>
+            <th scope="col">Likes</th>
+            <th scope="col">Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tweet of tweets index as i">
+            <td scope="row">{{ i + 1 }}</td>
+            <td>{{ tweet.text }}</td>
+            <td>{{ tweet.likes | number}}</td>
+            <td>{{ tweet.date }}</td>
+        </tr>
+    </tbody>
+</table>
