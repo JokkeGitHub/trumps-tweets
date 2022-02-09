@@ -1,4 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-.div-tweets {background-color: black;}
+.div-tweets {
+    background-color: black;
+}
 
-.tweet-text {border-radius: 9px;}
+.tweet-text {
+    border-radius: 9px;
+    width: 500px;
+}
+
+.tweet-row{
+    padding: 10px;
+}
