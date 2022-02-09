@@ -4,6 +4,11 @@
     <div style="float: left; width: 30%;">
         <h3>Search for text. NOTE: It is case sensitive.</h3>
         <input type="text" [(ngModel)]="input">
+        <br>
+        <br>
+        <br>
+        <h3>Input a number to see which tweets has likes above the input.</h3>
+        <input type="text" [(ngModel)]="inputNumber">
     </div>
 
     <div>
@@ -18,7 +23,7 @@
                                 <div class="tweet-border">
                                     <td class="tweet-text"> Donald Trump tweeted:
                                         <p [ngStyle]="{'background-color': tweet.text.includes(input) ? 'lightgreen' : 'red'}"> {{ tweet.text }} </p>
-                                        <p class="tweet-likes" style="float: left;">{{ tweet.likes | number}}</p>
+                                        <p [ngStyle]="{'background-color': tweet.likes > inputNumber ? 'lightgreen' : 'red'}"class="tweet-likes" style="float: left;">{{ tweet.likes | number}}</p>
                                         <p class="tweet-date" style="float: right;">{{ tweet.date | date}}</p>
                                     </td>
                                 </div>

@@ -11,6 +11,8 @@ import { TweetsService } from '../service/tweets.service';
 
 export class TwitterComponent implements OnInit {
   input:string = "";
+  inputNumber:number = 0;
+
   tweets: Tweet[] = [];
 
   constructor(private tweetsService: TweetsService) { }
