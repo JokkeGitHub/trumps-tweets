@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Tweet } from '../interface/tweet';
 import { TweetsService } from '../service/tweets.service';
-// TweetService? (CountryService)
 
 @Component({
   selector: 'app-twitter',
