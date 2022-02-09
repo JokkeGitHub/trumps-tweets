@@ -1,31 +1,30 @@
-<h4>Read Angular JSON using Http GET</h4>
-
-<div>
+<div class="div-main">
+    <br>
 
     <div style="float: left; width: 30%;">
         <p>create search parameters over here</p>
     </div>
 
-    <div class="div-tweets" style="float: left; width: %;">
+    <div>
         <table class="table table-striped">
     
             <thead>
                 <tr>
-                    <th scope="col" bgcolor="red">#</th>
-                    <th scope="col" bgcolor="blue">Text</th>
+                    <th class="header" scope="col">Trump's tweets
+                        <tbody style="vertical-align: middle;">
+                            <tr *ngFor="let tweet of tweets index as i">
+                                <td scope="row">{{ i + 1 }}</td>
+                                <td class="tweet-text">{{ tweet.text }}
+                                    <br>
+                                    <p style="float: left;">{{ tweet.likes | number}}</p>
+                                    <p style="float: right;">{{ tweet.date | date}}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </th>
                 </tr>
             </thead>
     
-            <tbody>
-                <tr *ngFor="let tweet of tweets index as i">
-                    <td bgcolor="green" scope="row">{{ i + 1 }}</td>
-                    <td class="tweet-text" bgcolor="teal">{{ tweet.text }}
-                        <br>
-                        <p style="float: left;">{{ tweet.likes | number}}</p>
-                        <p style="float: right;">{{ tweet.date | date}}</p>
-                    </td>
-                </tr>
-            </tbody>
     
         </table>
     </div>

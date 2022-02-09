@@ -1,12 +1,15 @@
-.div-tweets {
-    background-color: black;
+.div-main {
+    background-color: rgb(151, 217, 255);
+}
+
+.header{
+    background-color: aliceblue;
+    width: 97%;
+    border-radius: 20px;
 }
 
 .tweet-text {
+    background-color: rgb(151, 217, 255);
     border-radius: 9px;
     width: 500px;
-}
-
-.tweet-row{
-    padding: 10px;
 }
