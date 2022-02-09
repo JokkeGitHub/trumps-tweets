@@ -3,7 +3,7 @@
 }
 
 .header{
-    background-color: aliceblue;
+    background-color: rgb(204, 148, 151);
     width: 97%;
     border-radius: 20px;
 }
@@ -12,4 +12,21 @@
     background-color: rgb(151, 217, 255);
     border-radius: 9px;
     width: 500px;
+}
+
+.tweet-likes {
+    background-color: rgb(204, 148, 151);
+    border-radius: 9px;
+    width: 100px;
+}
+
+.tweet-date{
+    background-color: rgb(204, 148, 151);
+    border-radius: 9px;
+    width: 100px;
+}
+
+.tweet-border{
+    background-color: black;
+    border-radius: 9px;
 }
