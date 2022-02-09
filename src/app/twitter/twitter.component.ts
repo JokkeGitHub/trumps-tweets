@@ -10,7 +10,7 @@ import { TweetsService } from '../service/tweets.service';
 })
 
 export class TwitterComponent implements OnInit {
-
+  input:string = "";
   tweets: Tweet[] = [];
 
   constructor(private tweetsService: TweetsService) { }
@@ -21,3 +21,5 @@ export class TwitterComponent implements OnInit {
     })
   }
 }
+
+//<p *ngIf="tweet.text.includes(input)" > {{ tweet.text }} </p>
